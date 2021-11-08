@@ -11,18 +11,35 @@
 <body>
    
    
-<ul>
- 
-    <li><a href="index.html"><img src="logo.jpg"  style="height: 50px; width: 50px;"></a></li>
-    <li><a href="Under24.html">Under 24m</a></li>
-    <li><a href="Over24.html">Over 24m</a></li>
-    <li><a href="NewArrivals.html">New Arrivals</a></li>
-    <li><a href="Contacts.html">Contacts</a></li>
 
-</ul>
-
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="Over24.html">Over24m</a>
+        <a href="Under24.html">Under24m</a>
+        <a href="NewArrivals.html">NewArrivals</a>
+        
+      </div>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+      
+      
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+      
+      
        
+        <script>
 
+            function openNav() {
+              document.getElementById("mySidenav").style.width = "250px";
+            }
+            
+            function closeNav() {
+              document.getElementById("mySidenav").style.width = "0";
+            }
+            
+            </script>
+            
        
 </body>
 </html>

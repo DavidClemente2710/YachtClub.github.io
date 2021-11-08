@@ -5,8 +5,8 @@
 
 .Boats IMG{
   
-    width: 700px;
-    height: 600px;
+    width: 650px;
+    height: 500px;
     
 }
 
@@ -29,4 +29,11 @@ div.gallery {
   div.desc {
     padding: 15px;
     text-align: center;
+    font-size: 14px;
   }
+
+
+  
+
+
+  

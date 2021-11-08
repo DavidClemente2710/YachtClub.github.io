@@ -11,20 +11,26 @@
 </head>
 <body>
    
-   
-<ul>
- 
-    <li><a href="index.html"><img src="logo yc.png"  style="height: 50px; width: 50px;"></a></li>
-    <li><a href="Under24.html">Under 24m</a></li>
-    <li><a href="Over24.html">Over 24m</a></li>
-    <li><a href="NewArrivals.html">New Arrivals</a></li>
-   
 
-</ul>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html">Home</a>
+    <a href="Over24.html">Over24m</a>
+    <a href="Under24.html">Under24m</a>
+    <a href="NewArrivals.html">NewArrivals</a>
+    
+  </div>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  
+  
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
 
 <div class="Boats">
 
-
+  
+  <div id="img-display">
     <div class="gallery">
         <a target="_blank" href="img_5terre.jpg">
           <img src="IMG /pershing54.png" alt="Cinque Terre" >
@@ -136,8 +142,36 @@
   </div>
 
 
+
+
+
        
 </div>
-       
+</div>   
+
+
+<div class="magnifier" style="width: swpx; height: shpx;">
+  <div class="maglens">
+    <img src="image-file" class="maglarge" style="width: lwpx; height: lhpx;" />
+  </div>
+</div>
+
+
+
+<script>
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+
+
+</script>
+
+<div id="large-img"></div>
+
 </body>
 </html>

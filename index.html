@@ -1,30 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <link rel="icon" type="image/png" href="logo yc.png" />
-    <link href="css/index.css" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YACHTCLUB</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/index.css" rel="stylesheet">
+
 </head>
 <body>
+
+
+
+
+
+
+
+<div   <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Home</a>
+  <a href="Over24.html">Over24m</a>
+  <a href="Under24.html">Under24m</a>
+  <a href="NewArrivals.html">NewArrivals</a>
+  
+</div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+
+
+<video autoplay muted loop id="video">
+  <source src="IMG /intro.mp4">
+</video>
+
+<h2 class="text">
+  <span class="word">Sail </span>
+  <span class="word">has never been so smooth</span>
+</h2>
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+
+
+
+
+anime.timeline({loop: false})
+  .add({
+    targets: '.text .word',
+    scale: [14,1],
+    opacity: [0,1],
+    easing: "easeOutCirc",
+    duration: 100,
+    delay: (el, i) => 800 * i
+  }).add({
+    targets: '.text',
+    opacity: 0,
+    duration: 100,
+    easing: "easeOutExpo",
+    delay: 20000
+  });
+
+
+
+
+
+</script>
    
-    <video autoplay muted loop id="video">
-        <source src="IMG /intro.mp4">
-    </video>
-<ul>
- 
-    <li><a href="index.html"><img src="logo yc.png"  style="height: 50px; width: 50px;"></a></li>
-    <li><a href="Under24.html">Under 24m</a></li>
-    <li><a href="Over24.html">Over 24m</a></li>
-    <li><a href="NewArrivals.html">New Arrivals</a></li>
-   
-
-</ul>
-
-       <h2>Sail has never been so smooth</h2>
-
-       
 </body>
-</html>
+</html> 
